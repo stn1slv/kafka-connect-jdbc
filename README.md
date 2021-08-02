@@ -2,6 +2,11 @@
 
 ## Start infrastructure
 
+Clean old containers:
+```
+docker rm zookeeper kafka postgres connect
+```
+Start components:
 ```bash
  docker-compose -f compose.yml -f postgres.yml -f kafka.yml up
 ```
